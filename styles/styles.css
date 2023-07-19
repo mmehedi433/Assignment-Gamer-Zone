@@ -473,7 +473,6 @@ footer small {
     }
 }
 /* Responsive issue fix for laptop screen */
-
 @media screen and (max-width: 1100px) {
     .play-instantly_image .smallImg {
         bottom: -39px;
@@ -593,11 +592,17 @@ footer small {
 }
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
+    .row {
+        padding: 30px 10px;
+    }
     .online-games_demos {
         grid-template-columns: 1fr;
     }
     .online-games_demos .demo {
         width: 95%;
+    }
+    section.careers {
+        padding: 0px 10px;
     }
     .about-details ul,
     .social-links ul {
