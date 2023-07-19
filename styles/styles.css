@@ -395,6 +395,7 @@ section.all-games ul {
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 20px;
+    column-gap: 20px;
 }
 
 .all-games button {
@@ -485,6 +486,9 @@ footer small {
     section.gamer .row {
         grid-template-columns: 1fr 1fr;
     }
+    section.all-games ul {
+        column-gap: 0px;
+    }
 }
 
 /* Responsive for Tablet device */
@@ -556,6 +560,7 @@ footer small {
     }
     section.all-games ul {
         justify-content: space-evenly;
+        column-gap: 10px;
     }
     section.play-instantly,
     section.play-games-online {
