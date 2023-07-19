@@ -10,7 +10,7 @@ body {
 
 /* Shared Styles */
 .row {
-    max-width: 1150px;
+    max-width: 75%;
     margin: auto;
     padding: 30px 45px;
     /* border: 1px solid rgb(186, 186, 186); */
@@ -47,6 +47,7 @@ button {
     border-radius: 35px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 .btn-primary {
     background-color: #ff42a5;
@@ -151,7 +152,7 @@ nav .menu .follow-us img {
     margin-right: 10px;
 }
 .banner-content .fa-play {
-    border: 2px solid #0b0223;
+    border: 2px solid #7e7497;
     border-radius: 50%;
     /*  */
     display: flex;
@@ -219,35 +220,7 @@ section.gamer .row {
     font-weight: 500;
     line-height: 150%; /* 150% */
 }
-/* 
-.demo .image {
-    position: relative;
-    display: inline-block;
-    background: transparent;
-    display: inline-block;
-}
 
-.demo .image > img {
-    vertical-align: middle;
-}
-
-.demo .image::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0;
-    transition: 0.5s ease;
-}
-.demo .image:hover::before {
-    opacity: 0.23;
-}
-.hidden-texts {
-    display: none;
-} */
 .image-container {
     position: relative;
     border: 5px solid transparent;
@@ -297,4 +270,142 @@ section.gamer .row {
 .image-container .hidden-texts p {
     font-size: 0.8rem;
     color: #ff42a5;
+}
+/* Play Instantly, No Downloads No Installs Section and
+Play Games Online Anywhere Section */
+section.play-instantly,
+section.play-games-online {
+    display: grid;
+    column-gap: 80px;
+}
+.play-instantly_contents,
+.play-games-online_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+/* Play Instantly, No Downloads No Installs Section*/
+section.play-instantly {
+    grid-template-columns: auto 620px;
+    justify-content: flex-end;
+    padding-bottom: 85px;
+}
+.play-instantly_contents {
+    text-align: right;
+}
+.play-instantly_image {
+    position: relative;
+    justify-self: end;
+}
+.play-instantly_image .bigImg {
+    width: 475px;
+}
+.play-instantly_image .smallImg {
+    position: absolute;
+    bottom: -46px;
+    left: -104px;
+    width: 238px;
+}
+/* Play Games Online Anywhere Section */
+section.play-games-online {
+    grid-template-columns: 635px auto;
+    justify-content: flex-start;
+    padding-bottom: 120px;
+}
+
+.play-games-online_image {
+    position: relative;
+    justify-self: left;
+}
+.play-games-online_image .bigImg {
+    width: 530px;
+}
+.play-games-online_image .smallImg {
+    position: absolute;
+    bottom: -90px;
+    right: -100px;
+    width: 238px;
+}
+.play-games-online_contents {
+    text-align: left;
+}
+
+/* Careers Section */
+section.careers {
+    background-color: #ff42a5;
+
+    display: grid;
+    grid-template-columns: 36% 51.5%;
+    justify-content: flex-end;
+}
+.careers_contents {
+    align-self: center;
+    color: white;
+    padding-left: 45px;
+    padding: 30px 0px;
+}
+
+.careers_contents .description {
+    color: white;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.careers_contents table {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 30px; /* 200% */
+    width: 100%;
+}
+.careers_contents table tr td:nth-child(2) {
+    text-align: right;
+}
+.careers_contents button {
+    background-color: #fff;
+    color: #ff42a5;
+    margin-top: 30px;
+}
+section.careers .careers_image {
+    align-self: center;
+}
+section.careers .careers_image img {
+    width: 100%;
+    height: auto;
+}
+/* All Games List Section */
+section.all-games {
+    background-color: rgba(255, 66, 165, 0.03);
+}
+section.all-games .row {
+    padding: 90px 45px;
+}
+section.all-games ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 24px;
+}
+
+.all-games button {
+    background-color: white;
+    color: #0b0223;
+    height: 60px;
+
+    border: 1px solid transparent;
+    padding: 0px 15px 0px 0px;
+
+    display: flex;
+    align-items: center;
+}
+.all-games button:hover {
+    color: #ff42a5;
+    border: 1px solid #ff42a5;
+}
+
+.all-games button img {
+    width: 45px;
+    height: 45px;
+    padding: 6px 10px 6px 6px;
+}
+@media screen and (max-width: 960px) {
 }
