@@ -16,11 +16,35 @@ body {
     /* border: 1px solid rgb(186, 186, 186); */
 }
 
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.title-color {
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button {
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+}
+.btn-primary {
+    background-color: #ff42a5;
+}
 /* Nav Bar Styles */
 nav {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-
-    width: 100%;
 }
 nav .row {
     display: flex;
@@ -49,18 +73,14 @@ nav .menu ul li:not(.follow-us ul li:nth-child(1)) {
 
 nav .menu ul,
 nav .menu ul li {
-    list-style-type: none;
-    /* display: inline; */
     display: flex;
     align-items: center;
 }
 nav .menu ul li,
 nav .menu ul li a {
     color: #3c354f;
-    text-align: center;
     font-size: 0.85rem;
     font-weight: 500;
-    text-decoration: none;
 }
 nav .menu .follow-us {
     border-radius: 6px;
@@ -68,7 +88,69 @@ nav .menu .follow-us {
     padding: 8px 18px;
 }
 nav .menu .follow-us img {
-    width: auto;
     height: 25px;
 }
+
 /* Banner Styles */
+.banner {
+    background-image: url("../images/Group 14.png");
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+}
+.banner .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.banner-content h3 {
+    color: #0b0223;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-content h2.title-color {
+    font-size: 4.45rem;
+    font-weight: 800;
+}
+.banner-content ul {
+    margin: 20px 0px 30px 0px;
+}
+.banner-content ul li {
+    color: #534c64;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.banner-content ul li:nth-child(1) {
+    display: inline-flex;
+}
+.banner-content i.fa-solid {
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-right: 10px;
+}
+.banner-content .fa-play {
+    border: 2px solid #0b0223;
+    border-radius: 50%;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-content .fa-play,
+.banner-content .fa-download {
+    color: #ff42a5;
+}
+.banner-content .btn_02 {
+    background: #4ec5f7;
+    margin-left: 18px;
+}
+/*  */
+.banner-image img {
+    width: 100%;
+}
