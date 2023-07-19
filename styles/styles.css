@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Shared Styles */
+.row {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 45px;
+    /* border: 1px solid rgb(186, 186, 186); */
+}
+
+/* Nav Bar Styles */
+nav {
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+    width: 100%;
+}
+nav .row {
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+nav .logo img {
+    width: 65px;
+    height: auto;
+}
+nav .logo .site-title {
+    color: #0b0223;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+nav .logo .site-title span {
+    color: #ff42a5;
+}
+nav .menu ul li:not(.follow-us ul li:nth-child(1)) {
+    margin-left: 25px;
+}
+
+nav .menu ul,
+nav .menu ul li {
+    list-style-type: none;
+    /* display: inline; */
+    display: flex;
+    align-items: center;
+}
+nav .menu ul li,
+nav .menu ul li a {
+    color: #3c354f;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav .menu .follow-us {
+    border-radius: 6px;
+    background: rgba(11, 2, 35, 0.1);
+    padding: 8px 18px;
+}
+nav .menu .follow-us img {
+    width: auto;
+    height: 25px;
+}
+/* Banner Styles */
