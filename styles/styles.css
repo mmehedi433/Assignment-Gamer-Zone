@@ -489,8 +489,6 @@ footer small {
     section.all-games ul {
         column-gap: 0px;
     }
-    .online-games_demos {
-    }
 }
 
 /* Responsive for Tablet device */
@@ -558,7 +556,10 @@ footer small {
 
     section.careers {
         grid-template-columns: 1fr;
-        padding: 0px 45px;
+        /* padding: 0px 45px; */
+    }
+    .careers_contents {
+        padding: 10px 45px;
     }
     section.all-games ul {
         justify-content: space-evenly;
@@ -613,7 +614,10 @@ footer small {
     }
 
     section.careers {
-        padding: 0px 10px;
+        /* padding: 0px 10px; */
+    }
+    .careers_contents {
+        padding: 10px 45px;
     }
     .about-details ul,
     .social-links ul {
